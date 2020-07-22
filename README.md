@@ -12,7 +12,7 @@ API for the web app Gods of Arena
 ```
 git clone
 
-cd api-whatowatch
+cd godsofarena-api
 npm install
 ```
 
@@ -29,11 +29,12 @@ nano .env.local
 ## Database
 
 ```
-# create the databse 'whatowatch' and user whatowatch
-CREATE DATABASE whatowatch;
-CREATE user whatowatch@localhost IDENTIFIED BY 'whatowatch';
-grant all privileges on whatowatch.* to whatowatch@localhost;
-flush privileges;
+# create the databse 'godsofarena' and user godsofarena
+CREATE DATABASE godsofarena;
+create user godsofarena with encrypted password 'godsofarena';
+grant all privileges on database godsofarena to godsofarena;
+
+# do not forget to activate login option to authorize authentication from outside
 
 # run migrations (before running server !!!) :
 npm run migrate

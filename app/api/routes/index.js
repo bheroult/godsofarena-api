@@ -1,9 +1,21 @@
 var express = require('express');
-var router = express.Router();
+var fs = require('fs');
+const path = require('path');
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+module.exports = app => {
+  const router = new express.Router();
+  
+  router.locals = app.locals;
 
-module.exports = router;
+  // Include all routes
+  fs.readdirSync(__dirname)
+    .filter(folder => folder !== 'index.js')
+    .map(folder => path.join(__dirname, folder))
+    .forEach(folderPath =>
+      fs.readdirSync(folderPath)
+        .map(fileName => require(path.join(folderPath, fileName)))
+        .forEach(controller => controller(router))
+    );
+
+  return router;
+}
