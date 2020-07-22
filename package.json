@@ -1,0 +1,24 @@
+{
+  "name": "godsofarena-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development DEBUG=godsofarena-api:* nodemon ./bin/start.js",
+    "devstart": "nodemon ./bin/start.js",
+    "start": "node ./bin/start.js",
+    "migrate": "npx sequelize-cli db:migrate"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.3",
+    "sequelize-cli": "^6.2.0"
+  }
+}
