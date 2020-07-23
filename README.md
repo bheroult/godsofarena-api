@@ -38,6 +38,11 @@ grant all privileges on database godsofarena to godsofarena;
 
 # run migrations (before running server !!!) :
 npm run migrate
+
+# run seeds
+npm run seeds
+
+# now you can run the server
 ```
 
 ## Modify database
