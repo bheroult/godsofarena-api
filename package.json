@@ -6,10 +6,13 @@
     "dev": "cross-env NODE_ENV=development DEBUG=godsofarena-api:* nodemon ./bin/start.js",
     "devstart": "nodemon ./bin/start.js",
     "start": "node ./bin/start.js",
-    "migrate": "npx sequelize-cli db:migrate"
+    "migrate": "npx sequelize-cli db:migrate",
+    "seeds": "npx sequelize-cli db:seed:all",
+    "test": "mocha"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
     "cookie-parser": "~1.4.4",
     "cross-env": "^7.0.2",
     "debug": "~2.6.9",
@@ -24,6 +27,7 @@
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.3",
     "sequelize-cli": "^6.2.0",
+    "uuid": "^8.2.0",
     "winston": "^3.3.3"
   }
 }
