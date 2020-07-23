@@ -6,67 +6,67 @@ module.exports = {
       {
         name: 'Maximus',
         type: 'Epéiste',
-        ModifierContent: 'Choix d épée'
+        ModifierTitle: 'Choix d épée'
       },
       {
         name: 'Spartacus',
         type: 'Epéiste',
-        ModifierContent: 'Choix d épée'
+        ModifierTitle: 'Choix d épée'
       },
       {
         name: 'Priscus',
         type: 'Epéiste',
-        ModifierContent: 'Type d épée'
+        ModifierTitle: 'Type d épée'
       },
       {
         name: 'Pollux',
         type: 'Epéiste',
-        ModifierContent: 'Type d épée'
+        ModifierTitle: 'Type d épée'
       },
       {
         name: 'Ganicus',
         type: 'Lancier',
-        ModifierContent: 'Type de lance'
+        ModifierTitle: 'Type de lance'
       },
       {
         name: 'Crixus',
         type: 'Lancier',
-        ModifierContent: 'Type de lance'
+        ModifierTitle: 'Type de lance'
       },
       {
         name: 'Jeanclaudedus',
         type: 'Cavalier',
-        ModifierContent: 'Cuirasse'
+        ModifierTitle: 'Cuirasse'
       },
       {
         name: 'Spiculus',
         type: 'Cavalier',
-        ModifierContent: 'Cuirasse'
+        ModifierTitle: 'Cuirasse'
       },
       {
         name: 'Commodus',
         type: 'Archer',
-        ModifierContent: 'Type d arc'
+        ModifierTitle: 'Type d arc'
       },
       {
         name: 'Flamma',
         type: 'Archer',
-        ModifierContent: 'Type d arc'
+        ModifierTitle: 'Type d arc'
       },
       {
         name: 'Mouton Noir',
         type: 'Animal',
-        ModifierContent: 'Cuirasse'
+        ModifierTitle: 'Cuirasse'
       },
       {
         name: 'Tigre',
         type: 'Animal',
-        ModifierContent: 'Cuirasse'
+        ModifierTitle: 'Cuirasse'
       },
       {
         name: 'Lion',
         type: 'Animal',
-        ModifierContent: 'Cuirasse'
+        ModifierTitle: 'Cuirasse'
       }
     ], {});
   },

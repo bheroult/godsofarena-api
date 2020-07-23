@@ -19,7 +19,7 @@ module.exports = (app, express) => {
     app.use(express.static(path.join(__dirname, 'public')));
 
     //define routes
-    app.use('/', async (req, res) => {
+    app.get('/', async (req, res) => {
         return res.status(200).json('API UP')
     });
     app.use('/', routes(app));

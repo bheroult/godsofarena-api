@@ -13,7 +13,7 @@ module.exports = {
         allowNull: false,
         defaultValue: 'Epéiste'
       },
-      ModifierContent: {
+      ModifierTitle: {
         type: DataTypes.STRING,
         references: {
           model: "Modifiers",

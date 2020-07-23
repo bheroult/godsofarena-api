@@ -4,12 +4,12 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
             primaryKey: true
-          },
-          type: {
+        },
+        type: {
             type: DataTypes.ENUM('Epéiste', 'Lancier', 'Cavalier', 'Archer', 'Animal'),
             allowNull: false,
             defaultValue: 'Epéiste'
-          }
+        }
     }, {
         timestamps: false
     });
