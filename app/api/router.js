@@ -3,6 +3,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 var logger = require('morgan');
+var cors = require('cors');
 
 var routes = require('./routes');
 
@@ -11,6 +12,7 @@ module.exports = (app, express) => {
     /*app.set('views', path.join(__dirname, 'views'));
     app.set('view engine', 'jade');*/
 
+    app.use(cors());
     app.use(logger('dev'));
     app.use(express.json());
     app.use(bodyParser.json());
